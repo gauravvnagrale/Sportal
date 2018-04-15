@@ -4,24 +4,7 @@
             "outputFile": "C:\\Users\\Zamaan\\AndroidStudioProjects\\Sportal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.2.0.aar\\d9e31d4ba62e51d76ec92ac7c3932b27\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,331",
-                        "endColumns": "58,46,169,135",
-                        "endOffsets": "109,156,326,462"
-                    },
-                    "to": {
-                        "startLines": "39,40,41,42",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "4902,4961,5008,5178",
-                        "endColumns": "58,46,169,135",
-                        "endOffsets": "4956,5003,5173,5309"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c9e0fc10d8ef6831ee296a13bcb25d8b\\res\\values-es\\values-es.xml",
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ed3e0c56c711bed197ee0088fcc11ae8\\res\\values-es\\values-es.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\d525bb34e76e74c82a3af28ba17ac2a0\\res\\values-es\\values.xml",
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\8ad1a569d1c053ad22abb3f69d868509\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4801",
+                        "endColumns": "100",
+                        "endOffsets": "4897"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\2344b52c6fc204bfe41f86796d49da99\\res\\values-es\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\cf38f5262b7178f4acfc1d602d8200fc\\res\\values-es\\values.xml",
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.2.0.aar\\95b9577ef698331b08e5d47ac9f00665\\res\\values-es\\values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,331",
+                        "endColumns": "58,46,169,135",
+                        "endOffsets": "109,156,326,462"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,42",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "4902,4961,5008,5178",
+                        "endColumns": "58,46,169,135",
+                        "endOffsets": "4956,5003,5173,5309"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-12.0.1.aar\\f3ebb6ed1b8c70c246e493a1cb73b166\\res\\values-es\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,23 +86,6 @@
                         "startOffsets": "3087",
                         "endColumns": "218",
                         "endOffsets": "3301"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\66101cd02521d3e3d2eb7fa1df9d8ce9\\res\\values-es\\values-es.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4801",
-                        "endColumns": "100",
-                        "endOffsets": "4897"
                     }
                 }
             ]

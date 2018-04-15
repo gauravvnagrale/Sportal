@@ -13,6 +13,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivityAdmin extends AppCompatActivity {
 
     Button scan_btn;
+    Button add_equipment_btn;
+    Button edit_equipment_btn;
     Button logout_btn;
 
     FirebaseAuth firebaseAuth;
@@ -29,12 +31,30 @@ public class MainActivityAdmin extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         scan_btn = findViewById(R.id.scan_btn);
+        add_equipment_btn = findViewById(R.id.add_equipment_btn);
+        edit_equipment_btn = findViewById(R.id.edit_equipment_btn);
         logout_btn = findViewById(R.id.logout_btn);
 
         scan_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivityAdmin.this, ScannerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        add_equipment_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivityAdmin.this, AddEquipmentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        edit_equipment_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivityAdmin.this, EquipmentListAdminActivity.class);
                 startActivity(intent);
             }
         });

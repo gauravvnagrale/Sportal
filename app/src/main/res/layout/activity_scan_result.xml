@@ -14,7 +14,7 @@
         >
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/user_iv"
+            android:id="@+id/equipment_iv"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@drawable/camera_icon"
@@ -24,7 +24,7 @@
         <LinearLayout
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/user_iv"
+            android:layout_toRightOf="@+id/equipment_iv"
             android:layout_marginTop="20dp"
             android:weightSum="2"
             android:layout_centerVertical="true">
@@ -138,12 +138,14 @@
                 android:layout_height="wrap_content"
                 android:text="Equipment booked:"
                 android:textSize="18sp"/>
+
             <TextView
+                android:id="@+id/equipment_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:text="Equipment pack name"
-                android:textSize="18sp"
-                android:layout_alignParentRight="true"/>
+                android:textSize="18sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -154,12 +156,14 @@
                 android:layout_height="wrap_content"
                 android:text="Sport:"
                 android:textSize="18sp"/>
+
             <TextView
+                android:id="@+id/equipment_sport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:text="Sport name"
-                android:textSize="18sp"
-                android:layout_alignParentRight="true"/>
+                android:textSize="18sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -170,12 +174,14 @@
                 android:layout_height="wrap_content"
                 android:text="Contents:"
                 android:textSize="18sp"/>
+
             <TextView
+                android:id="@+id/equipment_contents"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:text="Contents"
-                android:textSize="18sp"
-                android:layout_alignParentRight="true"/>
+                android:textSize="18sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -186,13 +192,15 @@
                 android:layout_height="wrap_content"
                 android:text="Status:"
                 android:textSize="18sp"/>
+
             <TextView
+                android:id="@+id/equipment_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Booked"
-                android:textSize="18sp"
                 android:layout_alignParentRight="true"
-                android:textColor="@color/colorPrimary"/>
+                android:text="Booked"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
         </RelativeLayout>
 
     </LinearLayout>

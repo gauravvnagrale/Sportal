@@ -14,13 +14,15 @@ public class User {
     public String degree;
     public String branch;
     public Boolean booked;
+    public Boolean received;
     public String booking_id;
     public String booking_date;
 
     public User() {
+        //default constructor
     }
 
-    public User(String UID, String name, String dob, String email, String student_id, String photo_url, String degree, String branch, Boolean booked, String booking_id, String booking_date) {
+    public User(String UID, String name, String dob, String email, String student_id, String photo_url, String degree, String branch, Boolean booked, Boolean received, String booking_id, String booking_date) {
         this.UID = UID;
         this.name = name;
         this.dob = dob;
@@ -30,6 +32,7 @@ public class User {
         this.degree = degree;
         this.branch = branch;
         this.booked = booked;
+        this.received = received;
         this.booking_id = booking_id;
         this.booking_date = booking_date;
     }

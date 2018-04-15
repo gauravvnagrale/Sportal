@@ -29,14 +29,14 @@
         android:text="Scan QR code" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/add_equipment_btn"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add new equipment" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/edit_equipment_btn"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

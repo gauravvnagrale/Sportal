@@ -88,7 +88,8 @@ public class MainActivityStudent extends AppCompatActivity
 //        loadUserInformation();
 
         //Default fragment
-        Fragment fragment = new MySportal();
+        //Fragment fragment = new MySportal();
+        Fragment fragment = new EquipmentListFragment();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.MyFrameLayout, fragment);
         ft.commit();
@@ -146,6 +147,11 @@ public class MainActivityStudent extends AppCompatActivity
         else if (id == R.id.nav_show_qr_code) {
 
             fragment = new QRCode();
+
+        }
+        else if (id == R.id.nav_show_sports_equipment) {
+
+            fragment = new EquipmentListFragment();
 
         }
         else if (id == R.id.nav_about){

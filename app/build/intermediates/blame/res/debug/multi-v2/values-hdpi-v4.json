@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Zamaan\\AndroidStudioProjects\\Sportal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\c9e0fc10d8ef6831ee296a13bcb25d8b\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\ed3e0c56c711bed197ee0088fcc11ae8\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.9.aar\\854251380a085e5020a308e695f80915\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Zamaan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.9.aar\\cfdf7d5acaec4a85cab3419fc94f0356\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

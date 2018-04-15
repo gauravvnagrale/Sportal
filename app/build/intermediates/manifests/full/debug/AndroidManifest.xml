@@ -51,6 +51,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.android.sportal.StudentLogin" >
             <intent-filter>
@@ -67,6 +68,11 @@
         <activity android:name="com.example.android.sportal.MainActivityAdmin" />
         <activity android:name="com.example.android.sportal.ScannerActivity" />
         <activity android:name="com.example.android.sportal.ScanResultActivity" />
+        <activity android:name="com.example.android.sportal.AddEquipmentActivity" />
+        <activity android:name="com.example.android.sportal.EquipmentListAdminActivity" />
+        <activity android:name="com.example.android.sportal.EquipmentInfoActivity" />
+        <activity android:name="com.example.android.sportal.BookEquipmentActivity" />
+        <activity android:name="com.example.android.sportal.ScanResultActivity1" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

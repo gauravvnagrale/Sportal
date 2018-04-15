@@ -29,7 +29,12 @@
         <activity android:name=".UserInfoActivity" />
         <activity android:name=".MainActivityAdmin" />
         <activity android:name=".ScannerActivity" />
-        <activity android:name=".ScanResultActivity"></activity>
+        <activity android:name=".ScanResultActivity" />
+        <activity android:name=".AddEquipmentActivity" />
+        <activity android:name=".EquipmentListAdminActivity" />
+        <activity android:name=".EquipmentInfoActivity" />
+        <activity android:name=".BookEquipmentActivity" />
+        <activity android:name=".ScanResultActivity1"></activity>
     </application>
 
 </manifest>

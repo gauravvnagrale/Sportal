@@ -76,4 +76,12 @@
     <array name="phd">
 
     </array>
+
+    <item name="content1" type="id" />
+    <item name="content2" type="id" />
+    <item name="content3" type="id" />
+    <item name="content4" type="id" />
+    <item name="content5" type="id" />
+
+
 </resources>
