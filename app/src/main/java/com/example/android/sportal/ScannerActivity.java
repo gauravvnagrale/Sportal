@@ -136,6 +136,7 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
 
         Intent intent = new Intent(ScannerActivity.this, ScanResultActivity.class);
         intent.putExtra("scanResult",scanResult);
+        finish();
         startActivity(intent);
 
     }

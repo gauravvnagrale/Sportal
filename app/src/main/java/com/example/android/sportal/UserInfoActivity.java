@@ -266,7 +266,7 @@ public class UserInfoActivity extends AppCompatActivity {
         String degree = spinner1.getSelectedItem().toString();
         String branch = spinner2.getSelectedItem().toString();
 
-        User user = new User(UID,name,dob,email,student_id,photo_url,degree,branch,false,false,"","");
+        User user = new User(UID,name,dob,email,student_id,photo_url,degree,branch,false,false,"","","");
 
         databaseUsers.child(UID).setValue(user);
 

@@ -1,7 +1,6 @@
 package com.example.android.sportal;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.TypedValue;
@@ -20,9 +19,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class BookEquipmentActivity extends AppCompatActivity {
 
@@ -179,17 +179,9 @@ public class BookEquipmentActivity extends AppCompatActivity {
             user_obj.booked = true;
             user_obj.received = false;
 
-            DateTimeFormatter dtf = null;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-            }
-            LocalDate localDate = null;
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                localDate = LocalDate.now();
-            }
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                user_obj.booking_date = localDate.toString();
-            }
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+            Date current_date = new Date();
+            user_obj.booking_date = dateFormat.format(current_date);
 
             user_obj.booking_id = equipment_id;
 

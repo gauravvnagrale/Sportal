@@ -88,4 +88,5 @@ public class EquipmentListFragment extends Fragment {
             }
         });
     }
+
 }

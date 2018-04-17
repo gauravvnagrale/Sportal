@@ -20,13 +20,17 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MainActivityStudent extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private FirebaseAuth firebaseAuth;
-    private FirebaseUser user;
+    private DatabaseReference databaseUsers;
 
     private TextView email_tv;
     private TextView name_tv;
@@ -34,13 +38,16 @@ public class MainActivityStudent extends AppCompatActivity
 
     private String UID;
 
+    User correct_user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_student);
 
         firebaseAuth = FirebaseAuth.getInstance();
-
+        databaseUsers = FirebaseDatabase.getInstance().getReference("users");
+        correct_user = new User();
 
         if(firebaseAuth.getCurrentUser() == null){
             finish();
@@ -95,10 +102,29 @@ public class MainActivityStudent extends AppCompatActivity
         ft.commit();
     }
 
-    private void loadUserInformation() {
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        databaseUsers.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
+                    User user = userSnapshot.getValue(User.class);
+                    if(user.UID.equals(firebaseAuth.getCurrentUser().getUid()) ){
+                        correct_user = user;
+                    }
+                }
 
 
+            }
 
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
@@ -143,6 +169,20 @@ public class MainActivityStudent extends AppCompatActivity
 
         if(id == R.id.nav_my_sportal){
             fragment = new MySportal();
+
+            Bundle bundle = new Bundle();
+            //bundle.putString("user_photo_url",correct_user.photo_url);
+            bundle.putString("user_name",correct_user.name);
+            bundle.putString("user_degree", correct_user.degree);
+            bundle.putString("user_branch",correct_user.branch);
+            bundle.putString("user_student_id",correct_user.student_id);
+            bundle.putBoolean("user_booked",correct_user.booked);
+            bundle.putString("user_booking_id",correct_user.booking_id);
+            bundle.putString("user_booking_date",correct_user.booking_date);
+            bundle.putBoolean("user_received",correct_user.received);
+            bundle.putString("user_issue_date",correct_user.issue_date);
+
+            fragment.setArguments(bundle);
         }
         else if (id == R.id.nav_show_qr_code) {
 

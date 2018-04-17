@@ -107,12 +107,16 @@ public class ScanResultActivity extends AppCompatActivity {
                     Intent intent = new Intent(ScanResultActivity.this, ScanResultActivity1.class);
                     intent.putExtra("user_id",correct_user.UID);
                     intent.putExtra("user_name",correct_user.name);
+                    intent.putExtra("user_dob",correct_user.dob);
+                    intent.putExtra("user_email",correct_user.email);
                     intent.putExtra("user_degree",correct_user.degree);
                     intent.putExtra("user_branch",correct_user.branch);
                     intent.putExtra("user_student_id",correct_user.student_id);
                     intent.putExtra("user_photo_url",correct_user.photo_url);
                     intent.putExtra("user_received",correct_user.received);
-                    intent.putExtra("booking_id",correct_user.booking_id);
+                    intent.putExtra("user_booking_id",correct_user.booking_id);
+                    intent.putExtra("user_booking_date",correct_user.booking_date);
+                    intent.putExtra("user_issue_date",correct_user.issue_date);
 
                     startActivity(intent);
                 }
@@ -126,12 +130,12 @@ public class ScanResultActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        finish();
+        Intent intent = new Intent(ScanResultActivity.this, ScannerActivity.class);
+        startActivity(intent);
+    }
 }

@@ -52,23 +52,23 @@ public final class R {
         public static final int googleg_standard_color_18 = 0x7f08007b;
     }
     public static final class id {
-        public static final int adjust_height = 0x7f090020;
-        public static final int adjust_width = 0x7f090021;
-        public static final int auto = 0x7f090027;
-        public static final int center = 0x7f090036;
-        public static final int dark = 0x7f09004e;
-        public static final int icon_only = 0x7f09007e;
-        public static final int light = 0x7f09008c;
-        public static final int none = 0x7f0900a7;
-        public static final int normal = 0x7f0900a8;
-        public static final int progressBar = 0x7f0900b4;
-        public static final int radio = 0x7f0900b9;
-        public static final int standard = 0x7f0900e8;
-        public static final int text = 0x7f0900f2;
-        public static final int text2 = 0x7f0900f3;
-        public static final int toolbar = 0x7f090102;
-        public static final int wide = 0x7f090114;
-        public static final int wrap_content = 0x7f090117;
+        public static final int adjust_height = 0x7f090021;
+        public static final int adjust_width = 0x7f090022;
+        public static final int auto = 0x7f090028;
+        public static final int center = 0x7f090037;
+        public static final int dark = 0x7f09004f;
+        public static final int icon_only = 0x7f09008b;
+        public static final int light = 0x7f090099;
+        public static final int none = 0x7f0900b4;
+        public static final int normal = 0x7f0900b5;
+        public static final int progressBar = 0x7f0900c1;
+        public static final int radio = 0x7f0900c6;
+        public static final int standard = 0x7f0900f5;
+        public static final int text = 0x7f0900ff;
+        public static final int text2 = 0x7f090100;
+        public static final int toolbar = 0x7f09010f;
+        public static final int wide = 0x7f090121;
+        public static final int wrap_content = 0x7f090124;
     }
     public static final class integer {
         public static final int google_play_services_version = 0x7f0a0007;
